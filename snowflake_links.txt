@@ -1,0 +1,13 @@
+Some useful links:
+
+https://docs.snowflake.com/en/sql-reference/sql/remove
+https://docs.snowflake.com/en/sql-reference/sql/list
+https://docs.snowflake.com/en/sql-reference/functions/listagg
+https://docs.snowflake.com/en/sql-reference/constructs/pivot
+https://docs.snowflake.com/en/sql-reference/sql/copy-into-table#transformation-parameters
+https://docs.snowflake.com/en/user-guide/data-load-transform
+https://docs.snowflake.com/en/sql-reference/functions/uuid_string
+https://docs.snowflake.com/en/user-guide/json-basics-tutorial-flatten
+https://docs.snowflake.com/en/sql-reference/sql/create-task
+https://docs.snowflake.com/en/sql-reference/sql/create-stream
+https://docs.snowflake.com/en/user-guide/tasks-ts
