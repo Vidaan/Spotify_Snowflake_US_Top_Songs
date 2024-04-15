@@ -1,8 +1,0 @@
-Resources:
-    SpotifyApi:
-        Type: AWS::Serverless::Function
-        Properties:
-            Handler: spotify_api.lambda_handler
-            Runtime: python3.9
-            CodeUri: .
-            
