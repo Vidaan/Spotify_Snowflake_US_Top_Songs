@@ -23,8 +23,8 @@ def access_token():
     }
     tokenRequestBody = {
         'grant_type': 'client_credentials',
-        'client_id': 'aa8c5e4adb3849e4afdd41ba16fb1732',
-        'client_secret': '448cc4b0498c477787b7ef4e8a3edc5f'
+        'client_id': '<your-client-id>',
+        'client_secret': '<your-client-secret>'
     }
     response = requests.request('POST', url=tokenUri, headers=header, data=tokenRequestBody)
     access_token = response.json()['access_token']
