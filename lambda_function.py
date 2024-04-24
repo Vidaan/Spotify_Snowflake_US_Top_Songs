@@ -52,13 +52,12 @@ def write_json_to_file(data, file_name):
         pd.concat(data).to_json(file_path, orient = 'records')
     return file_path
 
-# function to upload a file to an S3 bucket.
+# function to upload a file to S3 bucket.
 def upload_to_s3(file_name, bucket_name, object_name=None):
-    # If S3 object_name was not specified, use file_name
+    # If S3 object_name is not specified, use file_name
     if object_name is None:
         object_name = file_name
     # Upload the file
-    s3_client = boto3.client('s3')
     try:
         response = s3_client.upload_file(file_name, bucket_name, object_name)
     except NoCredentialsError:
@@ -94,3 +93,4 @@ def lambda_handler(event, context):
 
     # Upload the file
     uploaded = upload_to_s3(file_path, bucket_name)
+    print("File uploaded to S3.")
